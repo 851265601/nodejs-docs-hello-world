@@ -57,7 +57,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'LeonTestAppSWebServiceForLinux'
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CLIENT_SECRET }}
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1BD4F3B383204916BA83EF59ED9E9185 }}
